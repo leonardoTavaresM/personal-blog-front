@@ -26,6 +26,13 @@ interface ApiArticle {
   blocks?: ArticleBlock[];
 }
 
+console.log(
+  "process.env.NEXT_PUBLIC_STRAPI_URL",
+  process.env.NEXT_PUBLIC_STRAPI_URL
+);
+
+console.log("existe uma env:", process.env.NEXT_PUBLIC_STRAPI_URL);
+
 export default function Home() {
   const [articles, setArticles] = useState<Article[]>([]);
 
