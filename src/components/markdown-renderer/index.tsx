@@ -9,7 +9,7 @@ interface MarkdownRendererProps {
 
 export default function MarkdownRenderer({
   content,
-  strapiUrl = "http://localhost:1337",
+  strapiUrl = process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337",
 }: MarkdownRendererProps) {
   const processInlineText = useCallback(
     (text: string, keyOffset: number = 0): JSX.Element[] => {

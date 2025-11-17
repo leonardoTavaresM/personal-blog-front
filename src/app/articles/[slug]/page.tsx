@@ -6,7 +6,8 @@ import Link from "next/link";
 import Template from "../../../template";
 import MarkdownRenderer from "../../../components/markdown-renderer";
 
-const STRAPI_URL = "http://localhost:1337";
+const STRAPI_URL =
+  process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337";
 
 interface ArticleBlock {
   __component: string;

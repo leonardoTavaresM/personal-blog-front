@@ -3,7 +3,8 @@ import { useState, useEffect, useMemo } from "react";
 import Template from "../template";
 import Card, { Article } from "../components/card";
 
-const STRAPI_URL = "http://localhost:1337";
+const STRAPI_URL =
+  process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337";
 
 interface ArticleBlock {
   __component: string;
