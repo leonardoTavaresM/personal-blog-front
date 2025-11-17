@@ -9,6 +9,13 @@ import MarkdownRenderer from "../../../components/markdown-renderer";
 const STRAPI_URL =
   process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337";
 
+console.log(
+  "process.env.NEXT_PUBLIC_STRAPI_URL",
+  process.env.NEXT_PUBLIC_STRAPI_URL
+);
+
+console.log("existe uma env:", process.env.NEXT_PUBLIC_STRAPI_URL);
+
 interface ArticleBlock {
   __component: string;
   id: number;
