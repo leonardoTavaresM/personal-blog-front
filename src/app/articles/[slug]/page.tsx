@@ -6,15 +6,11 @@ import Link from "next/link";
 import Template from "../../../template";
 import MarkdownRenderer from "../../../components/markdown-renderer";
 
-const STRAPI_URL =
-  process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337";
+const STRAPI_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337";
 
-console.log(
-  "process.env.NEXT_PUBLIC_STRAPI_URL",
-  process.env.NEXT_PUBLIC_STRAPI_URL
-);
+console.log("process.env.NEXT_PUBLIC_API_URL", process.env.NEXT_PUBLIC_API_URL);
 
-console.log("existe uma env:", process.env.NEXT_PUBLIC_STRAPI_URL);
+console.log("existe uma env:", process.env.NEXT_PUBLIC_API_URL);
 
 interface ArticleBlock {
   __component: string;
